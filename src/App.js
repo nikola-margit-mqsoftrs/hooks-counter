@@ -14,6 +14,14 @@ function App() {
             {count}
             <button onClick={() => setCount(count + increment)}>+</button>
             <input type="number" onChange={handleIncrement} value={increment} />
+            <button
+                onClick={() => {
+                    setCount(0)
+                    setIncrement(1)
+                }}
+            >
+                reset
+            </button>
         </>
     )
 }
