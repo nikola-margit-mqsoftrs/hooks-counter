@@ -9,9 +9,9 @@ function App() {
     }
 
     return (
-        <>
+        <section className="main">
+            <div className="count">{count}</div>
             <button onClick={() => setCount(count - increment)}>-</button>
-            {count}
             <button onClick={() => setCount(count + increment)}>+</button>
             <input type="number" onChange={handleIncrement} value={increment} />
             <button
@@ -22,7 +22,7 @@ function App() {
             >
                 reset
             </button>
-        </>
+        </section>
     )
 }
 
